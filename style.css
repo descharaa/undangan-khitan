@@ -9,6 +9,10 @@ body {
   font-size: 1.2rem;
   font-family: "Work Sans", sans-serif;
   min-height: 4000px;
+  color: #0a0a0a;
+
+.main {
+  color: #000;
 }
 
 .hero::before {
@@ -18,7 +22,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url(img/bg-prewed.jpg);
+  background-image: url(img/bg1.webp);
   background-size: cover;
   background-position: center;
   z-index: -1;
@@ -82,14 +86,14 @@ body {
 
 .mynavbar .navbar-brand {
   margin: 0;
-  padding-top: 50px;
+  padding-top: 20px;
   line-height: 15px;
 }
 .mynavbar .navbar-brand h1 {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
-  letter-spacing: 2.5px;
-  font-size: 1.5rem;
+  letter-spacing: 2px;
+  font-size: 1.4rem;
   display: block;
 }
 
@@ -100,7 +104,7 @@ body {
   padding-top: 5px;
 }
 .home {
-  background-image: url(img/bg.png);
+  background-image: url(img/bg1.webp);
   background-size: cover;
   min-height: 100vh;
   margin-top: -6rem;
@@ -163,19 +167,18 @@ body {
 }
 
 .info {
-  /* background-image: url(img/3.jpg);
-  background-repeat: no-repeat;
+  background-image: url(img/bg1.webp);
   background-size: cover;
   min-height: 100vh;
   margin-top: -6rem;
   padding-top: 15rem;
-  padding-bottom: 5rem; */
+  padding-bottom: 5rem;
 
-  background: #e0e0e0;
+  /* background: #e0e0e0;
   background-size: cover;
   background-position: center;
   color: #010101;
-  text-shadow: #0a0a0a;
+  text-shadow: #0a0a0a; */
 }
 
 .info .alamat {
