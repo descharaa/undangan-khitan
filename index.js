@@ -1,10 +1,11 @@
 function copyToClipboard() {
   // Pilih elemen yang akan disalin
-  var copyText = document.getElementById("copyText");
+  var copyText = document.getElementById("briBank");
 
   // Buat textarea sementara untuk menyalin teks
   var tempTextArea = document.createElement("textarea");
   tempTextArea.value = copyText.innerText;
+  tempTextArea.value = tempTextArea.value.split(" - ")[0];
   document.body.appendChild(tempTextArea);
 
   // Pilih teks dalam textarea
