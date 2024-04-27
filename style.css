@@ -44,7 +44,7 @@ body {
 
 .hero h1 {
   font-family: "Work Sans", sans-serif;
-  font-size: 6rem;
+  font-size: 4rem;
   color: #ffff;
   text-shadow: var(--shadow);
 }
