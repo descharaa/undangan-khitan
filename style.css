@@ -32,25 +32,25 @@ body {
 
 .hero h1,
 .hero h4,
-.hero p {
-  text-shadow: var(--shadow);
-}
-
-.hero h1 {
-  font-family: "Work Sans", sans-serif;
-}
-
 .hero h4 {
   font-size: 1.6rem;
   color: #0a0a0a;
 }
 
 .hero p {
+  color: #444;
   font-size: 1.4rem;
 }
 
+.hero h1 {
+  font-family: "Work Sans", sans-serif;
+  font-size: 6rem;
+  color: #ffff;
+  text-shadow: var(--shadow);
+}
+
 .hero a {
-  color: vvar(--bg);
+  color: var(--bg);
   background-color: white;
   box-shadow: var(--shadow);
 }
