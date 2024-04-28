@@ -21,3 +21,14 @@ function copyToClipboard() {
   // Beri tahu pengguna bahwa teks telah disalin
   alert("Teks telah disalin ke papan klip!");
 }
+
+// Menyembunyikan navbar saat item di dalamnya diklik
+document.querySelectorAll(".navbar-nav .nav-link").forEach((item) => {
+  item.addEventListener("click", () => {
+    // Menutup navbar saat item diklik
+    const navbarToggler = document.querySelector(".navbar-toggler");
+    if (navbarToggler && !navbarToggler.classList.contains("collapsed")) {
+      navbarToggler.click();
+    }
+  });
+});
