@@ -61,18 +61,22 @@ body {
 }
 
 .mynavbar {
-  background-color: rgba(255, 255, 255, 0.3) !important;
-  backdrop-filter: blur(4px);
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.9
+  ); /* Mengurangi transparansi untuk kejelasan */
 }
 
 .mynavbar .offcanvas {
-  height: 100vh;
+  height: 100%; /* Mengatur ketinggian offcanvas ke 100% */
 }
 
 .mynavbar .navbar-brand,
 .mynavbar .offcanvas-title {
   font-family: "Borel", cursive;
-  font-size: 1.8rem;
+  font-size: 1.4rem; /* Mengurangi ukuran font */
   font-weight: bold;
 }
 
@@ -80,25 +84,22 @@ body {
   text-transform: uppercase;
 }
 
-.mynavbar .navbar-brand {
-  margin: 0;
-  padding-top: 20px;
-  line-height: 15px;
-}
 .mynavbar .navbar-brand h1 {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
   letter-spacing: 2px;
-  font-size: 1.4rem;
-  display: block;
+  font-size: 1.2rem; /* Mengurangi ukuran font */
+  margin: 0;
+  padding: 5px 0; /* Mengurangi ruang putih atas dan bawah */
 }
 
 .mynavbar .navbar-brand p {
   font-weight: lighter;
-  font-size: 17px;
-  display: block;
-  padding-top: 5px;
+  font-size: 14px; /* Mengurangi ukuran font */
+  margin: 0;
+  padding: 0;
 }
+
 .home {
   background-image: url(img/bgmain.png);
   background-size: cover;

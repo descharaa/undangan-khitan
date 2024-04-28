@@ -50,7 +50,7 @@
       <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
         <div class="offcanvas-header">
           <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
-            TRACCIA IMAGINER
+            Razqa
           </h5>
           <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
@@ -436,26 +436,30 @@
     disableScroll();
   </script>
   <script>
-    const form = document.getElementById("myForm");
-    form.addEventListener("submit", function (e) {
-      e.preventDefault();
-      const data = new FormData(form);
-      fetch(
-        "https://script.google.com/macros/s/AKfycbydaCQZurBY-IzO5Bzz4OE8Vhat6P7VadMN1MIiJbPSLDoHzuOb8a--zN25Tdx4k9JpKw/exec",
-        {
-          method: "POST",
-          body: data,
-        }
-      )
-        .then((res) => {
-          if (res.ok) {
-            return res.text();
-          }
-        })
-        .then(() => {
-          alert("Konfirmasi kehadiran terkirim");
-        });
-    });
+   const form = document.getElementById("myForm");
+form.addEventListener("submit", function (e) {
+  e.preventDefault();
+  const data = new FormData(form);
+  fetch("https://script.google.com/macros/s/AKfycbwA1pxCmzDcIbc3wDaO8wbr9E0z3rMDrDmLsNMEmfb5bQc4Je9mwvz26vyzBh3BDQvTJQ/exec", {
+    method: "POST",
+    body: data
+  })
+  .then((res) => {
+    if (res.ok) {
+      return res.text();
+    } else {
+      throw new Error('Gagal mengirim data ke spreadsheet');
+    }
+  })
+  .then(() => {
+    alert("Konfirmasi kehadiran terkirim");
+  })
+  .catch((error) => {
+    console.error('Terjadi kesalahan:', error);
+    alert("Terjadi kesalahan saat mengirim data");
+  });
+});
+
   </script>
   <script>
     const urlParams = new URLSearchParams(window.location.search);
