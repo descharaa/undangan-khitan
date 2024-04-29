@@ -8,16 +8,17 @@
   overflow: hidden;
   display: table;
   margin: auto;
+  max-width: 100%;
 }
 .simply-countdown > .simply-section {
   width: 50px;
   height: 50px;
-  padding: 70px;
+  padding: 53px;
   display: flex;
   align-items: center;
   justify-content: center;
   float: left;
-  margin: 10px;
+  margin: 2px;
   background: rgba(0, 0, 0, 0.8);
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   border-radius: 30%;
@@ -29,5 +30,14 @@
 }
 
 .simply-countdown > .simply-section .simply-amount {
-  font-size: 1.6rem;
+  font-size: 1.3rem;
 }
+
+@media only screen and (max-width: 600px) {
+  .simply-countdown > .simply-section {
+    width: 40px; /* Reduce the width of sections for smaller screens */
+    height: 40px; /* Reduce the height of sections for smaller screens */
+    padding: 45px; /* Reduce the padding for smaller screens */
+  }
+  .simply-countdown > .simply-section .simply-amount {
+    font-size: 1rem; /

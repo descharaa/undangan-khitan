@@ -14,6 +14,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Borel&display=swap" rel="stylesheet" />
 
+  <link href="path/to/bootstrap.min.css" rel="stylesheet">
+
   <!-- simplyCountdown -->
   <link rel="stylesheet" href="countdown/simplyCountdown.theme.custom.css" />
   <script src="countdown/simplyCountdown.min.js"></script>
@@ -66,19 +68,8 @@
       </div>
     </div>
   </nav>
-  <script>
-    // Menyembunyikan navbar saat item di dalamnya diklik
-    document.querySelectorAll('.navbar-nav .nav-link').forEach(item => {
-      item.addEventListener('click', () => {
-        // Menutup navbar saat item diklik
-        const navbarToggler = document.querySelector('.navbar-toggler');
-        if (navbarToggler && !navbarToggler.classList.contains('collapsed')) {
-          navbarToggler.click();
-        }
-      });
-    });
-  </script>
-  
+
+  <script src="path/to/bootstrap.bundle.min.js"></script>
 
   <section id="home" class="home">
     <div class="container">
